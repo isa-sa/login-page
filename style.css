@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0)
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+footer {
+  margin-top: 70px;
+  color: white;
+}  
+
+.field {
+  margin-left: 30px;
+  width: 300px;;
+  height: 30px;
+  border-radius: 8px;
+  border-color: rgb(224, 216, 203);
+  background-color: rgb(224, 216, 203);
+}
+
+#loginbutton {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px 50px 10px 50px;
+  margin: 20px 120px; 
+  cursor: pointer;
+  background-color: rgb(37, 16, 70);
+  font-weight: bold;
+  color: white;
+  }
+
+ #loginbutton:hover {
+  background-color: rgb(224, 216, 203);
+  color: black;
+}
+
+.label {
+  margin-left: 30px;
+}
+
+#titulo {
+  margin-left: 30px;
+  margin-bottom: 50px; 
+}
+
+#forgot{
+  margin-left: 120px;
+  text-align: center;
+}
+
+#linha{
+  border-top: 2px solid #000000; 
+  margin-top: -30px;   
+  width: 80%;
+  margin-left: 30px;           
+}
