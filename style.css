@@ -1,70 +1,86 @@
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100%; 
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   min-height: 100vh;
-  background-image: url("bg.png");
-  background-size: cover;
-  background-repeat: no-repeat; 
-  background-position: center center; 
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(0, 0, 0)
+  background-image: linear-gradient(to bottom left, rgb(10, 1, 20) 70%, rgb(166, 1, 53));
 }
 
-form {
+.form-container {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  padding-top: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-footer {
-  margin-top: 90px;
-  color: white;
-}  
-
-.field {
-  margin-left: 30px;
-  width: 300px;;
-  height: 30px;
-  border-radius: 8px;
-  border-color: rgb(224, 216, 203);
-  background-color: rgb(224, 216, 203);
+input, button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
-#loginbutton {
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px 50px 10px 50px;
-  margin: 20px 120px; 
-  cursor: pointer;
-  background-color: rgb(37, 16, 70);
+input:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  margin-left: 10px;
+  margin-top: 15px;
   font-weight: bold;
-  color: white;
-  }
+  color: rgb(10, 1, 20);
+}
 
- #loginbutton:hover {
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px 60px;
+  background-color: rgb(10, 1, 20);
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid black;
+  margin: 40px;
+}
+
+button:hover {
   background-color: rgb(224, 216, 203);
   color: black;
 }
 
-.label {
-  margin-left: 30px;
-}
-
-#titulo {
-  margin-left: 30px;
-  margin-bottom: 50px; 
-}
-
-#forgot{
-  margin-left: 125px;
-  text-align: center;
-}
-
-#linha{
-  border-top: 2px solid #000000; 
-  margin-top: -30px;   
-  width: 80%;
-  margin-left: 30px;           
+#forgot {
+  display: block;
+  margin-top: 40px;
+  color: black;
 }
