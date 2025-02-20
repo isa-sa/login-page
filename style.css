@@ -48,7 +48,7 @@ input:focus, button:focus {
 }
 
 label {
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 15px;
   font-weight: bold;
   color: rgb(10, 1, 20);
