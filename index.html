@@ -9,23 +9,29 @@
 
 </head>
 <body>
-    <header></header>
     <main>
+        <div class="form-container">
         <h1 id="titulo">Login - Cliente</h1>
         <hr id="linha">
-        <a id="forgot" href="">Esqueceu a senha?</a>
-            <form>
-                <div>
-                <label>Seu email*</label>
-                <input class="field" type="text">
-                <label>Sua senha*</label>
-                <input class="field" type="password">
-                <button id="loginbutton" type="submit" value="LOGIN"></button>
-                </div>
-            </form>
+
+        <form>
+            <div class="input-group">
+                <label for="email">Seu email</label>
+                <input class="field" type="email" id="email" name="email" required>
+            </div>
+        
+            <div class="input-group">
+                <label for="password">Sua senha</label>
+                <input class="field" type="password" id="password" name="password" required>
+            </div>
+
+           <div class="forgot-container">
+                <a id="forgot" href="#">Esqueceu a senha?</a>
+            </div>
+        
+            <button id="loginbutton" type="submit">LOGIN</button>
+        </form>
+    </div>
     </main>
-    <footer>
-        <p>® Lorem Ipsum. 2025.</p>
-    </footer>
 </body>
 </html>
